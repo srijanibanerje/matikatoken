@@ -36,7 +36,18 @@ https://templatemo.com/tm-562-space-dynamic
   </head>
 
 <body>
-  
+  <!-- popup menu -->
+   <div id="upgradePopup" class="popup-overlay">
+    
+  <div class="popup-box">
+    
+    <h2>Website Upgrade in Progress!</h2>
+    <p>We are upgrading our website to serve you better.</p>
+    <p>Thank you for your patience!</p>
+    <button onclick="closePopup()">Close</button>
+    
+  </div>
+</div>
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -798,6 +809,11 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script>
+function closePopup() {
+  document.getElementById("upgradePopup").style.display = "none";
+}
+</script>
 
 </body>
 </html>
